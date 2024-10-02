@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+.header{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 999;
+    background-color: white;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    /* padding: 0; */
+
+}
+
+.logo{
+    width: 180px;
+    height: 100%;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    margin: 0;
+
+}
+
+.logo a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    position: relative;
+    background-image: url(./logo-znews-light-2.svg);
+}
+
+
+.headers_menu> ul{
+    width: 100%;
+    height: 52px;
+    float: left;
+    margin:  0;
+    position: relative;
+    display: -webkit-box ;
+    display: -webkit-flex ;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0 40px 0 180px
+}
+
+.headers_menu>ul> li{
+    /* float: left ; */
+    position: relative;
+    font-size: 14px;
+    margin-right: 15px;
+
+}
+
+.headers_menu a{
+    text-decoration: none;
+    color: #16152e;
+    font-weight: bold;
+}
+
+.cagory_popup{
+    position: absolute;
+    width: 100%;
+}
+.menu_loai_bao{
+    padding: 20px 20px;
+    overflow: inherit;
+    background-color: #16152e;
+}
+
+.page_wrap{
+    display: flex; 
+    left: unset;
+    flex-direction: column;
+    max-width: 865px;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    
+} 
+
+.menu_loai_bao ul{
+    z-index: 999;
+    display: -webkit-box ;
+    display: -webkit-flex ;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+}
+
+
+
+.menu_loai_bao li{
+    padding-bottom: 20px;
+    width: 25%; 
+    font-weight: bold;
+    position: relative;
+   
+}
+.menu_loai_bao a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.menu_loai_bao li::before{
+    content: "/ ";
+    color: orangered;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+.menu_kenh{
+    padding: 1px 9px;
+    width: 100%;
+    background-color: #32313E;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0;
+} 
+
+.menu_kenh ul{
+    padding: 0 200px;
+    display: -webkit-box; 
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-flex-wrap: wrap; 
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+
+}
+
+ul {
+    list-style: none;
+}
