@@ -60,10 +60,10 @@ ul{
     padding-bottom: 15px;
 }
 
-.header-menu a {
+.header-menu li>a {
     text-decoration: none;
     color: #494949;
-    padding: 0 27px; 
+    padding: 0 13px; 
 }
 
 .header{
