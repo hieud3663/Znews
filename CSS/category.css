@@ -65,7 +65,7 @@ section {
   padding-bottom: 10px;
   text-align: center;
   margin: 0;
-  
+  text-transform: uppercase; 
 }
 
 #page-type #type-header ul {
