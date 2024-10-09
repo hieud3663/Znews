@@ -28,6 +28,7 @@ body{
   z-index: 99;
   padding: 0 30px;
   background: #FFF !important;
+  margin: 0 auto;
 
 }
 
@@ -36,7 +37,7 @@ body{
   padding-top: 52px !important;
   max-width: 1080px;
 
-  margin:  0 auto;
+  /* margin:  0 20px; */
 }
 
 .page-wrapper::after, .page-wrapper::before{
@@ -363,6 +364,7 @@ section > .section-title  {
   display: flex;
   background-color: #f7f7f7;
   justify-content: center;
+  line-height: 2;
 }
 .left-side-info{
   padding: 20px 32.5px;
