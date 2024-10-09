@@ -47,16 +47,14 @@ ul{
     width: 100%;
     background-color: #fff;
     margin-bottom: 0;
-    font-family: Arial, Helvetica, sans-serif;
     border-bottom: 1px solid #ddd;
-    
 }
 
 .header-menu li>a:hover{
     border-style: none none solid none;
     border-color: #63cde9;
     color:#63cde9;
-    padding-bottom: 19px;
+    padding-bottom: 17px;
     width: 100%;
 }
 
