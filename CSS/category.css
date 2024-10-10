@@ -23,21 +23,19 @@ body{
 
 
 .page-wrapper{
-
   position: relative;
   clear: both;
   z-index: 99;
   padding: 0 30px;
   background: #FFF !important;
   margin: 0 auto;
-
+  max-width: 1100px;
+  margin-top: 52px;
 }
 
 #page-type .page-wrapper {
-  padding: 0 5% !important;
-  padding-top: 52px !important;
-  max-width: 1080px;
-
+  /* padding: 0 5% !important;
+  padding-top: 52px !important; */
   /* margin:  0 20px; */
 }
 
@@ -53,6 +51,7 @@ section {
 }
 
 #page-type #type-header{
+  
   margin: 60px 0 25px;
   float: left;
   width: 100%;
@@ -123,23 +122,15 @@ a{
 
 
 
-
 .featured-group {
   margin-top: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
   display: flex;
-  /* width: 66%; */
-  padding-right: 2%;
-  /* text-align: center; */
-
   line-height: 1.29;
- 
   border-bottom: 1px solid #eee;
-  padding: 0 20px;
-  /* width: 34%; */
-  padding-left: 2%;
+  padding-right: 20px;  
   
 }
 
@@ -152,8 +143,16 @@ a{
   width: 100%;
   top:0;
   left: 0;
+  position: relative;
 
 }
+
+
+.article-thumbnail img{
+  display: block;
+  float: left;
+}
+
 
 .article-item-picked {
   padding-right: 2%;
@@ -165,6 +164,12 @@ a{
  
 }
 
+.article-item-picked .article-thumbnail,
+.short1 .article-thumbnail {
+  float: none;
+  margin: 0 auto; 
+
+}
 .article-item-picked .time{
   display: none;
 }
@@ -224,6 +229,7 @@ a{
   border-bottom: 1px solid #eee;
   padding-top: 0;
 }
+
 
 .article-list {
   
@@ -348,9 +354,10 @@ section > .section-title  {
 
 .article-item-long .article-summary{
   color: #888;
-  font-size: 1rem;
+  font-size: 0.75rem;
   display: block;
   margin: 6px 0;
+  line-height: 1.4;
 }
 
 .article-item-long .time{
