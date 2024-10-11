@@ -81,7 +81,7 @@
 
 
 
-.header_category_active a{
+.nav-item-active a{
     color: #04b2f7;
     border-style: none none solid none;
     border-color: #63cde9;
