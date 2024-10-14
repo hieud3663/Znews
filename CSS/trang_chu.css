@@ -1,0 +1,271 @@
+#trending-ticket{
+    height: 30px;
+    margin: 10px 0;
+    
+}
+
+.section-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.hashtag-trending::before{
+    background-image: url(/IMAGE/stat.svg);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+
+}
+
+.trending-group{
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+.featured-group {
+    border-bottom: none;
+}
+.article-picked-trending{
+    display: flex;
+    margin: 0;
+    
+    margin-bottom: 15px;
+}
+.article-picked-trending:not(:last-child){
+    border-bottom: solid #eee 0.8px;
+}
+
+.article-picked-trending img {
+    max-width: 120px;
+    max-height: 80px;
+}
+
+.article-picked-trending .article-thumbnail{
+    margin-right: 12px;
+    margin-top: 0;
+}
+
+.article-picked-trending .article-summary,
+.article-picked-trending .time{
+    display: none;
+}
+
+.article-picked-trending .article-title{
+    margin: 0;
+}
+
+.article-picked-trending a:hover{
+    color: #04b2f7;
+}
+.article-picked-trending a{
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* BOOKss */
+
+
+
+.section-content .container{
+    display: grid;
+    grid-template-columns: 100% 100%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    
+}
+
+.article-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px; 
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+  }
+
+ .article-list .article-item{
+    border: solid #dddddd 1px;
+    border-radius: 4px;
+    padding: 0;
+}
+
+ .article-list .article-item header{
+    padding: 0 10px 10px;
+}
+
+.article-list .article-item .article-thumbnail{
+    margin: 0;
+}
+
+.arrow {
+    background-color: transparent;
+    border: none;
+    font-size: 34px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  
+    z-index: 1; 
+  }
+  
+.arrow:hover{
+    color: #04b2f7;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  
+    z-index: 1; 
+    font-size: 38px;
+  }
+
+
+  .arrow.left {
+    left: 0;
+    transform: translateY(-25%) translateX(-75%); 
+  }
+  
+  .arrow.right {
+    right: 0;
+    transform: translateY(-25%) translateX(75%); 
+  }
+
+#section-media{
+    position: relative;
+    margin-top: 30px;
+}
+
+#section-media::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    background: #ffde76;
+}
+
+#section-media .section-title ul {
+    display: inline-flex;
+    position: relative;
+    top: -4px;
+}
+
+#section-media .section-title ul li{
+    margin-right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#section-media .section-title ul a:hover{
+    color: red;
+}
+
+
+
+.article-media{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    
+    padding-bottom: 0;   
+}
+
+
+
+.article-media-short{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px; 
+}
+
+.article-thumbnail{
+    margin: 0;
+}
+.article-media-short .article-summary, 
+.article-media-short .time{
+    display: none;
+}
+
+.article-media-short .article-title{
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.article-media-short .article-thumbnail{
+    max-width: 235px;
+    max-height: 157px;
+    width: 100%;
+    height: 100%;
+    
+}
+.article-media .article-thumbnail img{
+    width: 100%;
+    height: 100%;
+}
+
+.article-media .article-item-picked .article-thumbnail{
+    
+    max-width: 540px;
+    max-height: 337px;
+    /* width: 100%;
+    height: 100%; */
+}
+
+/* .article-media .article-item-picked a{
+    padding-top: 60px;
+} */
+
+
+
+.article-media .article-item-picked header{
+    text-align: left;
+}
+
+.article-media a:hover{
+    color: #04b2f7;
+}
+
+
+
+.aside-bar{
+    border: solid #eee 1.5px;
+    width: 40%;
+    padding: 25px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.aside-bar h3{
+    position: relative;
+    left: 0;
+    color: black;
+    font-size: 1.25rem;
+}
+
+
+.aside-bar .article-summary,
+.aside-bar .time{
+    display: none;
+}
+
+.aside-bar .article-thumbnail,
+.aside-bar .article-thumbnail img
+{   position: relative;
+    width: 72px;
+    height: 72px;
+}
+
+.aside-bar .article-title{
+    font-size: 0.9rem;
+}
