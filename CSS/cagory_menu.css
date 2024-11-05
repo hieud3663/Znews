@@ -291,6 +291,7 @@ ul {
 
 #search-box #search-btn{
     /* position: absolute; */
+    
     background-color: none;
     cursor: pointer;
     border:none;
