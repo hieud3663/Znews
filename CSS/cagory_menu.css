@@ -303,6 +303,11 @@ ul {
     .headers_menu>ul> li> a{
         display: none;
     }
+    .headers_menu>ul{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     .logo {
         position: absolute;
         left: 50%;
@@ -311,15 +316,19 @@ ul {
     .headers_menu{
         position: relative;
         margin-left: 0;
+        width:100%;
     }
     .headers_menu> ul> .more {
         position: absolute;
         right: 0;
     }
+    #search-box {
+        position: absolute;
+        left: 0;
+    }
     #search-box #search-text{
         position: absolute;
-        /* margin-left: 40px; */
         left: 50px;
-        top:0;
+        top: 0;
     }
 }
