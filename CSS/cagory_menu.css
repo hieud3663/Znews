@@ -244,7 +244,7 @@ ul {
     margin-top: -2px;
 }
 
-/* Tablet */
+/* Tablet
 @media (max-width: 1140px){
     .headers_menu>ul> li> a{
         display: none;
@@ -261,7 +261,7 @@ ul {
         position: absolute;
         right: 0;
     }
-}
+} */
 
 .dot:hover{
     color: #04b2f7 ;
@@ -291,7 +291,7 @@ ul {
 
 #search-box #search-btn{
     /* position: absolute; */
-    
+
     background-color: none;
     cursor: pointer;
     border:none;
