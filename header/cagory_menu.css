@@ -1,3 +1,4 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
 * {
     box-sizing: border-box;
 }
@@ -152,4 +153,43 @@
 
 ul {
     list-style: none;
+}
+
+
+
+#search-box #search-text{
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width:0;
+    padding: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+#search-box:hover #search-text, #search-box #search-text:valid {
+    width: 300px;
+    padding: 10px 0px 18px 15px;
+    background: black;
+    border-radius: 10px;
+    color:white;
+}
+
+#search-box #search-btn{
+    background-color: none;
+    cursor: pointer;
+    border:none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#search-box #search-btn:hover{
+    background-color: none;
+    cursor: pointer;
+    border:none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #63cde9;
 }
