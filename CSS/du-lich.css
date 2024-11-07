@@ -21,7 +21,7 @@
  .overlay-text {
      position: absolute;
      bottom: 20px;
-     left: 50%;
+     left: 40%;
      transform: translateX(-50%);
      text-align: center;
      display: flex;
@@ -39,16 +39,14 @@
      text-decoration: none;
      padding: 0 5px;
      letter-spacing: 5px;
+     color: rgba(255, 255, 255, 0.3); 
 
  }
 
- .overlay-text a:first-child {
-     color: #ffff; /* DU LỊCH color */
- }
+ .overlay-text .active-current{
+    color: #ffffff;
+}
 
- .overlay-text a:last-child {
-     /* ẨM THỰC color */
- }
 
  .overlay-text a:hover {
      color: #ffcc00; /* Hover color */
