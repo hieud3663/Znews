@@ -44,6 +44,27 @@ function searchMenu() {
 document.querySelectorAll('.article-thumbnail a').forEach(link => {
   link.addEventListener('click', function(event) {
     event.preventDefault();
-    window.location.href = 'trang-bao.html?src=' + encodeURIComponent(this.href);
+    window.open('trang-bao.html?src=' + encodeURIComponent(this.href), '_blank');
+  });
+});
+
+
+document.querySelectorAll('.article-title a').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.open('trang-bao.html?src=' + encodeURIComponent(this.href), '_blank');
+  });
+});
+
+document.querySelectorAll('.article a').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.open('trang-bao.html?src=' + encodeURIComponent(this.href), '_blank');
+  });
+});
+document.querySelectorAll('.info a').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.open('trang-bao.html?src=' + encodeURIComponent(this.href), '_blank');
   });
 });
