@@ -262,7 +262,7 @@ ul {
     transition: all 0.25s ease-in-out;
 }
 
-#search-box:hover #search-text, #search-box #search-text:valid {
+#search-box.active-current  #search-text, #search-box #search-text.active-current {
     position: absolute;
     margin-left:40px;
     width: 100px;

@@ -1,3 +1,5 @@
+
+
 const ele = document.querySelector('.more');
 const popup = document.querySelector('.cagory_popup')
 const backdrop = document.querySelector('.backdrop')
@@ -19,4 +21,24 @@ const backdrop = document.querySelector('.backdrop')
 
 ele.addEventListener('click',  menu);
 backdrop.addEventListener('click', menu);
+
+//khi nhấn vào nút search-button thì hiện ra thanh search
+// const searchButton = document.querySelector('#search-box');
+const search = document.querySelector('#search-box');
+const searchText = document.querySelector('#search-text');
+
+function searchMenu() {
+  // Kiểm tra nếu class 'active-current' đã
+  if (search.classList.contains('active-current') & searchText.classList.contains('active-current')) {
+    // Nếu đã tồn tại, xóa class 'active-current'
+    search.classList.remove('active-current');
+    searchText.classList.remove('active-current');
+
+  } else {
+    // Nếu chưa tồn tại, thêm class 'active-current'
+    search.classList.add('active-current');
+    searchText.classList.add('active-current');
+  }
+}
+
 
