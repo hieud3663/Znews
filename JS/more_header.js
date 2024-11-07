@@ -41,4 +41,9 @@ function searchMenu() {
   }
 }
 
-
+document.querySelectorAll('.article-thumbnail a').forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = 'trang-bao.html?src=' + encodeURIComponent(this.href);
+  });
+});
