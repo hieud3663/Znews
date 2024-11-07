@@ -184,16 +184,20 @@
 } 
 
 .menu_kenh ul{
-    padding: 0 200px;
-    display: -webkit-box; 
-    display: -webkit-flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0 10%;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-flex-wrap: wrap; 
-    -webkit-box-align: center;
+    justify-content: space-between;
     align-items: center;
-    -webkit-justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+}
 
+.menu_kenh ul li {
+    margin: 0 10px ; /* Thêm khoảng cách giữa các mục */
 }
 
 ul {
