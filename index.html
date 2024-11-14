@@ -12,13 +12,14 @@
 
  -->
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thanh toán thành công</title>
   <style>
+    /* Các style cho giao diện */
     * {
       margin: 0;
       padding: 0;
@@ -90,19 +91,54 @@
 <div class="container">
   <div class="success-icon">✓</div>
   <h1>Thanh toán thành công!</h1>
-  <p>Cảm ơn bạn đã đặt vé tại AVANCER CINEMA. Đơn hàng của bạn đã được xử lý thành công.</p>
+  <p>Cảm ơn bạn đã đặt vé tại AVANCER CINEMA. <br> Đơn hàng của bạn đã được xử lý thành công.</p>
   
-  <!-- <div class="order-info">
-    <p><strong>Mã đơn hàng:</strong> #123456</p>
-    <p><strong>Ngày đặt hàng:</strong> 14/11/2024</p>
-    <p><strong>Tổng tiền:</strong> 1.200.000₫</p>
-  </div> -->
-  
-  <!-- <div class="button-group">
+  <div class="order-info">
+    <p><strong>Mã đơn hàng:</strong> <span id="order-id"></span></p>
+    <p><strong>Ngày đặt hàng:</strong> <span id="order-date"></span></p>
+    <p><strong>Tổng tiền:</strong> <span id="amount"></span>₫</p>
+  </div>
+<!--   
+  <div class="button-group">
     <a href="#" class="home-button">Trở về trang chủ</a>
     <a href="#" class="details-button">Xem chi tiết đơn hàng</a>
   </div> -->
 </div>
 
+<script>
+  // Hàm lấy tham số từ URL
+  function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+    results = regex.exec(url);
+
+    if (!results) return null;
+    if (!results[2]) return '';
+
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+  }
+
+  // Lấy giá trị 'amount' và 'apptransid' từ URL và điền vào HTML
+  const amount = getParameterByName('amount');
+  const orderId = getParameterByName('apptransid');
+  
+  
+  // Lấy thời gian từ mã đơn hàng
+  let orderDate = 'Không xác định';
+  if (orderId) {
+    const datePart = orderId.split('_')[0];
+    const year = '20' + datePart.substring(0, 2);
+    const month = datePart.substring(2, 4);
+    const day = datePart.substring(4, 6);
+    orderDate = `${day}/${month}/${year}`;
+  }
+
+
+  document.getElementById('amount').textContent = amount || '0';
+  document.getElementById('order-id').textContent = orderId || 'Không xác định';
+  document.getElementById('order-date').textContent = orderDate;
+</script>
+
 </body>
 </html>
+
